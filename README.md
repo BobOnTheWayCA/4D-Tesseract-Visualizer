@@ -33,11 +33,11 @@ Key functions:
 
 - `project_4d_to_3d(points_4d, focal=2.5)`  
   Applies a simple 4D → 3D perspective-like projection  
-  $$
-  X = \frac{x}{\text{focal} - w},\quad
-  Y = \frac{y}{\text{focal} - w},\quad
-  Z = \frac{z}{\text{focal} - w}
-  $$
+  \[
+    X = \frac{x}{\text{focal} - w},\quad
+    Y = \frac{y}{\text{focal} - w},\quad
+    Z = \frac{z}{\text{focal} - w}
+  \] 
   with `np.clip` to avoid division by zero when `focal ≈ w`.
 
 - `init()`  
@@ -88,5 +88,6 @@ Department of Computing Science
 <p style="margin: 0; font-size: 14px; font-weight: bold;">
 Spring 2025, Edmonton, AB, Canada
 </p>
+
 
 </div>
